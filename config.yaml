@@ -1,0 +1,24 @@
+# Default configuration for Network Traffic Analyzer
+
+# Analysis Settings
+analysis:
+  max_packets: null  # null = no limit
+  timeout_seconds: 300
+  
+# Detection Thresholds
+detection:
+  port_scan_threshold: 20  # Number of unique ports to flag as scan
+  syn_flood_threshold: 100  # Number of SYN packets to flag
+  high_volume_percentage: 10  # Percentage of total traffic to flag
+
+# Output Settings
+output:
+  report_format: ["html", "pdf", "json"]
+  charts_enabled: true
+  chart_dpi: 300
+  
+# Forensic Settings
+forensic:
+  hash_algorithms: ["sha256", "md5"]
+  chain_of_custody_enabled: true
+  ethical_checks_enabled: true

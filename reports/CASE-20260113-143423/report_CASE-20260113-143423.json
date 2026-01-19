@@ -1,0 +1,574 @@
+{
+  "case_id": "CASE-20260113-143423",
+  "generated_date": "2026-01-13T14:34:25.460897",
+  "analyst": "Emrys",
+  "evidence_file": "2014-11-16-traffic-analysis-exercise.pcap",
+  "executive_summary": "\nNetwork traffic analysis was conducted on the provided PCAP file. \nThe analysis identified 11 unique source IP addresses \nand 16 unique destination IP addresses. \n\n\nNo significant suspicious activity was detected during the analysis.",
+  "findings": {
+    "analysis_results": {
+      "protocol_distribution": {
+        "TCP": {
+          "count": 2951,
+          "percentage": 96.65902391090731
+        },
+        "UDP": {
+          "count": 56,
+          "percentage": 1.83426138224697
+        },
+        "DNS": {
+          "count": 22,
+          "percentage": 0.7206026858827383
+        },
+        "ARP": {
+          "count": 19,
+          "percentage": 0.6223386832623649
+        },
+        "Other (2)": {
+          "count": 5,
+          "percentage": 0.16377333770062236
+        }
+      },
+      "ip_communications": {
+        "top_source_ips": {
+          "37.200.69.143": 1112,
+          "172.16.165.165": 848,
+          "74.125.233.96": 382,
+          "204.79.197.200": 308,
+          "82.150.140.30": 260,
+          "188.225.73.100": 62,
+          "74.125.233.100": 14,
+          "172.16.165.2": 11,
+          "185.53.178.9": 9,
+          "131.253.61.84": 4
+        },
+        "top_destination_ips": {
+          "172.16.165.165": 2164,
+          "37.200.69.143": 419,
+          "74.125.233.96": 173,
+          "82.150.140.30": 140,
+          "188.225.73.100": 33,
+          "172.16.165.2": 32,
+          "74.125.233.100": 11,
+          "204.79.197.200": 10,
+          "185.53.178.9": 8,
+          "224.0.0.252": 6
+        },
+        "top_conversations": [
+          {
+            "ips": [
+              "172.16.165.165",
+              "37.200.69.143"
+            ],
+            "packet_count": 1531
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "74.125.233.96"
+            ],
+            "packet_count": 555
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "82.150.140.30"
+            ],
+            "packet_count": 400
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "204.79.197.200"
+            ],
+            "packet_count": 318
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "188.225.73.100"
+            ],
+            "packet_count": 95
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "172.16.165.2"
+            ],
+            "packet_count": 43
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "74.125.233.100"
+            ],
+            "packet_count": 25
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "185.53.178.9"
+            ],
+            "packet_count": 17
+          },
+          {
+            "ips": [
+              "131.253.61.84",
+              "172.16.165.165"
+            ],
+            "packet_count": 7
+          },
+          {
+            "ips": [
+              "172.16.165.165",
+              "224.0.0.252"
+            ],
+            "packet_count": 6
+          }
+        ],
+        "unique_source_ips": 11,
+        "unique_destination_ips": 16
+      },
+      "dns_activity": {
+        "total_queries": 11,
+        "total_responses": 11,
+        "top_queried_domains": {
+          "stand.trustandprobaterealty.com.": 2,
+          "ssl.bing.com.": 1,
+          "www.ciniholland.nl.": 1,
+          "adultbiz.in.": 1,
+          "www.youtube.com.": 1,
+          "s.ytimg.com.": 1,
+          "24corp-shop.com.": 1,
+          "i.ytimg.com.": 1,
+          "wpad.localdomain.": 1,
+          "java.com.": 1
+        },
+        "recent_queries": [
+          {
+            "domain": "ssl.bing.com.",
+            "type": 1,
+            "timestamp": 1416103910.994963,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "www.ciniholland.nl.",
+            "type": 1,
+            "timestamp": 1416103913.685362,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "adultbiz.in.",
+            "type": 1,
+            "timestamp": 1416103916.195673,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "www.youtube.com.",
+            "type": 1,
+            "timestamp": 1416103919.968268,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "s.ytimg.com.",
+            "type": 1,
+            "timestamp": 1416103925.810977,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "24corp-shop.com.",
+            "type": 1,
+            "timestamp": 1416103929.734357,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "stand.trustandprobaterealty.com.",
+            "type": 1,
+            "timestamp": 1416103931.958014,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "i.ytimg.com.",
+            "type": 1,
+            "timestamp": 1416103933.918832,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "wpad.localdomain.",
+            "type": 1,
+            "timestamp": 1416103971.526013,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "stand.trustandprobaterealty.com.",
+            "type": 1,
+            "timestamp": 1416103978.6273,
+            "source_ip": "172.16.165.165"
+          },
+          {
+            "domain": "java.com.",
+            "type": 1,
+            "timestamp": 1416103980.982703,
+            "source_ip": "172.16.165.165"
+          }
+        ]
+      },
+      "http_activity": {
+        "total_requests": 0,
+        "methods": {},
+        "top_hosts": {},
+        "recent_requests": []
+      },
+      "tcp_connections": {
+        "total_connections": 57,
+        "top_destination_ports": {
+          "80": 611,
+          "49452": 388,
+          "49451": 380,
+          "49456": 308,
+          "49446": 262,
+          "443": 189,
+          "49433": 146,
+          "49432": 146,
+          "49439": 100,
+          "49447": 60
+        },
+        "top_source_ports": {
+          "80": 1749,
+          "443": 402,
+          "49452": 147,
+          "49456": 132,
+          "49446": 115,
+          "49451": 113,
+          "49439": 45,
+          "49437": 30,
+          "49450": 27,
+          "49447": 26
+        },
+        "connection_sample": [
+          {
+            "source": "204.79.197.200:80",
+            "destination": "172.16.165.165:49433",
+            "packets": 146,
+            "flags": {
+              "syn": 146,
+              "ack": 146,
+              "fin": 0,
+              "rst": 0
+            }
+          },
+          {
+            "source": "204.79.197.200:80",
+            "destination": "172.16.165.165:49432",
+            "packets": 146,
+            "flags": {
+              "syn": 146,
+              "ack": 146,
+              "fin": 0,
+              "rst": 0
+            }
+          },
+          {
+            "source": "131.253.61.84:443",
+            "destination": "172.16.165.165:49435",
+            "packets": 4,
+            "flags": {
+              "syn": 0,
+              "ack": 4,
+              "fin": 1,
+              "rst": 0
+            }
+          },
+          {
+            "source": "172.16.165.165:49435",
+            "destination": "131.253.61.84:443",
+            "packets": 3,
+            "flags": {
+              "syn": 0,
+              "ack": 3,
+              "fin": 1,
+              "rst": 0
+            }
+          },
+          {
+            "source": "172.16.165.165:49431",
+            "destination": "204.79.197.200:80",
+            "packets": 3,
+            "flags": {
+              "syn": 0,
+              "ack": 3,
+              "fin": 0,
+              "rst": 0
+            }
+          },
+          {
+            "source": "204.79.197.200:80",
+            "destination": "172.16.165.165:49431",
+            "packets": 5,
+            "flags": {
+              "syn": 0,
+              "ack": 5,
+              "fin": 0,
+              "rst": 1
+            }
+          },
+          {
+            "source": "172.16.165.165:49436",
+            "destination": "204.79.197.200:443",
+            "packets": 5,
+            "flags": {
+              "syn": 1,
+              "ack": 4,
+              "fin": 1,
+              "rst": 1
+            }
+          },
+          {
+            "source": "204.79.197.200:443",
+            "destination": "172.16.165.165:49436",
+            "packets": 6,
+            "flags": {
+              "syn": 1,
+              "ack": 6,
+              "fin": 0,
+              "rst": 0
+            }
+          },
+          {
+            "source": "172.16.165.165:49429",
+            "destination": "204.79.197.200:80",
+            "packets": 2,
+            "flags": {
+              "syn": 0,
+              "ack": 2,
+              "fin": 0,
+              "rst": 0
+            }
+          },
+          {
+            "source": "204.79.197.200:80",
+            "destination": "172.16.165.165:49429",
+            "packets": 4,
+            "flags": {
+              "syn": 0,
+              "ack": 4,
+              "fin": 0,
+              "rst": 1
+            }
+          }
+        ]
+      },
+      "udp_connections": {
+        "total_flows": 30,
+        "total_packets": 56,
+        "top_destination_ports": {
+          "137": 24,
+          "53": 11,
+          "5355": 6,
+          "67": 2,
+          "68": 2,
+          "62720": 1,
+          "51415": 1,
+          "60914": 1,
+          "52070": 1,
+          "51871": 1
+        },
+        "top_source_ports": {
+          "137": 24,
+          "53": 11,
+          "68": 2,
+          "63080": 2,
+          "67": 2,
+          "57368": 2,
+          "58144": 2,
+          "62720": 1,
+          "51415": 1,
+          "60914": 1
+        }
+      },
+      "suspicious_activity": {
+        "port_scans": [],
+        "syn_floods": [],
+        "high_volume_ips": [
+          {
+            "ip_address": "204.79.197.200",
+            "packet_count": 308,
+            "percentage": 10.09,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "172.16.165.165",
+            "packet_count": 848,
+            "percentage": 27.78,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "74.125.233.96",
+            "packet_count": 382,
+            "percentage": 12.51,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "37.200.69.143",
+            "packet_count": 1112,
+            "percentage": 36.42,
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "statistics": {
+      "protocol_summary": {
+        "TCP": {
+          "count": 2951,
+          "percentage": 96.65902391090731
+        },
+        "UDP": {
+          "count": 56,
+          "percentage": 1.83426138224697
+        },
+        "DNS": {
+          "count": 22,
+          "percentage": 0.7206026858827383
+        },
+        "ARP": {
+          "count": 19,
+          "percentage": 0.6223386832623649
+        },
+        "Other (2)": {
+          "count": 5,
+          "percentage": 0.16377333770062236
+        }
+      },
+      "ip_summary": {
+        "unique_sources": 11,
+        "unique_destinations": 16,
+        "top_source_ips": {
+          "37.200.69.143": 1112,
+          "172.16.165.165": 848,
+          "74.125.233.96": 382,
+          "204.79.197.200": 308,
+          "82.150.140.30": 260,
+          "188.225.73.100": 62,
+          "74.125.233.100": 14,
+          "172.16.165.2": 11,
+          "185.53.178.9": 9,
+          "131.253.61.84": 4
+        },
+        "top_destination_ips": {
+          "172.16.165.165": 2164,
+          "37.200.69.143": 419,
+          "74.125.233.96": 173,
+          "82.150.140.30": 140,
+          "188.225.73.100": 33,
+          "172.16.165.2": 32,
+          "74.125.233.100": 11,
+          "204.79.197.200": 10,
+          "185.53.178.9": 8,
+          "224.0.0.252": 6
+        }
+      },
+      "dns_summary": {
+        "total_queries": 11,
+        "total_responses": 11,
+        "top_domains": {
+          "stand.trustandprobaterealty.com.": 2,
+          "ssl.bing.com.": 1,
+          "www.ciniholland.nl.": 1,
+          "adultbiz.in.": 1,
+          "www.youtube.com.": 1,
+          "s.ytimg.com.": 1,
+          "24corp-shop.com.": 1,
+          "i.ytimg.com.": 1,
+          "wpad.localdomain.": 1,
+          "java.com.": 1
+        }
+      },
+      "http_summary": {
+        "total_requests": 0,
+        "methods": {},
+        "top_hosts": {}
+      },
+      "tcp_summary": {
+        "total_connections": 57,
+        "top_ports": {
+          "80": 611,
+          "49452": 388,
+          "49451": 380,
+          "49456": 308,
+          "49446": 262,
+          "443": 189,
+          "49433": 146,
+          "49432": 146,
+          "49439": 100,
+          "49447": 60
+        }
+      },
+      "anomaly_summary": {
+        "port_scans": [],
+        "syn_floods": [],
+        "high_volume_ips": [
+          {
+            "ip_address": "204.79.197.200",
+            "packet_count": 308,
+            "percentage": 10.09,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "172.16.165.165",
+            "packet_count": 848,
+            "percentage": 27.78,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "74.125.233.96",
+            "packet_count": 382,
+            "percentage": 12.51,
+            "severity": "MEDIUM"
+          },
+          {
+            "ip_address": "37.200.69.143",
+            "packet_count": 1112,
+            "percentage": 36.42,
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "evidence_integrity": {
+      "file_path": "C:\\Users\\amiru\\Downloads\\07_Malware Traffic Analysis Files\\07_Malware Traffic Analysis Files\\2014-11-16-traffic-analysis-exercise.pcap",
+      "file_name": "2014-11-16-traffic-analysis-exercise.pcap",
+      "file_size_bytes": 2551397,
+      "sha256": "0e3fac547536f773bf1a21180a2294a10be97e956f091d24e168f147ecf5fafd",
+      "md5": "41d34d07aa81f3cb5ee12315cc5c88a9",
+      "timestamp": "2026-01-13T14:34:23.981520",
+      "verified": true
+    },
+    "chain_of_custody": [
+      {
+        "timestamp": "2026-01-13T14:34:23.982155",
+        "action": "Evidence Acquired",
+        "analyst_name": "Emrys",
+        "analyst_id": "CASE-20260113-143423",
+        "notes": "PCAP file loaded for analysis. SHA256: 0e3fac547536f773...",
+        "entry_number": 1
+      },
+      {
+        "timestamp": "2026-01-13T14:34:23.982277",
+        "action": "Hash Calculated",
+        "analyst_name": "Emrys",
+        "analyst_id": "CASE-20260113-143423",
+        "notes": "SHA256 and MD5 hashes generated for integrity verification",
+        "entry_number": 2
+      },
+      {
+        "timestamp": "2026-01-13T14:34:24.443847",
+        "action": "Analysis Started",
+        "analyst_name": "Emrys",
+        "analyst_id": "CASE-20260113-143423",
+        "notes": "Loaded 3053 packets for analysis",
+        "entry_number": 3
+      }
+    ]
+  },
+  "recommendations": []
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "CASE-20260113-103036",
+  "evidence_file": "C:\\Users\\amiru\\Downloads\\2022-MTA-workshop-block-1-pcaps\\2022-MTA-workshop-block-1-pcaps\\2022-MTA-workshop-intro.pcap",
+  "file_name": "2022-MTA-workshop-intro.pcap",
+  "created_date": "2026-01-13T10:30:36.712763",
+  "entries": [
+    {
+      "timestamp": "2026-01-13T10:30:36.712773",
+      "action": "Evidence Acquired",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-103036",
+      "notes": "PCAP file loaded for analysis. SHA256: d3e580a2f34cb6b2...",
+      "entry_number": 1
+    },
+    {
+      "timestamp": "2026-01-13T10:30:36.712916",
+      "action": "Hash Calculated",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-103036",
+      "notes": "SHA256 and MD5 hashes generated for integrity verification",
+      "entry_number": 2
+    },
+    {
+      "timestamp": "2026-01-13T10:30:36.788595",
+      "action": "Analysis Started",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-103036",
+      "notes": "Loaded 528 packets for analysis",
+      "entry_number": 3
+    }
+  ]
+}

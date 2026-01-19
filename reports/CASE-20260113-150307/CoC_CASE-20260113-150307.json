@@ -1,0 +1,32 @@
+{
+  "case_id": "CASE-20260113-150307",
+  "evidence_file": "C:\\Users\\amiru\\Downloads\\evidence01.pcap",
+  "file_name": "evidence01.pcap",
+  "created_date": "2026-01-13T15:03:07.602351",
+  "entries": [
+    {
+      "timestamp": "2026-01-13T15:03:07.602361",
+      "action": "Evidence Acquired",
+      "analyst_name": "ABCD",
+      "analyst_id": "CASE-20260113-150307",
+      "notes": "PCAP file loaded for analysis. SHA256: 8b997bb2d221d538...",
+      "entry_number": 1
+    },
+    {
+      "timestamp": "2026-01-13T15:03:07.602556",
+      "action": "Hash Calculated",
+      "analyst_name": "ABCD",
+      "analyst_id": "CASE-20260113-150307",
+      "notes": "SHA256 and MD5 hashes generated for integrity verification",
+      "entry_number": 2
+    },
+    {
+      "timestamp": "2026-01-13T15:03:07.648488",
+      "action": "Analysis Started",
+      "analyst_name": "ABCD",
+      "analyst_id": "CASE-20260113-150307",
+      "notes": "Loaded 240 packets for analysis",
+      "entry_number": 3
+    }
+  ]
+}

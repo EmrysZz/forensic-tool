@@ -1,0 +1,32 @@
+{
+  "case_id": "CASE-20260113-145409",
+  "evidence_file": "C:\\Users\\amiru\\Downloads\\amp.TCP.reflection.SYNACK.pcap",
+  "file_name": "amp.TCP.reflection.SYNACK.pcap",
+  "created_date": "2026-01-13T14:54:09.829514",
+  "entries": [
+    {
+      "timestamp": "2026-01-13T14:54:09.829522",
+      "action": "Evidence Acquired",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-145409",
+      "notes": "PCAP file loaded for analysis. SHA256: 9339d7bc9d78e04a...",
+      "entry_number": 1
+    },
+    {
+      "timestamp": "2026-01-13T14:54:09.829807",
+      "action": "Hash Calculated",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-145409",
+      "notes": "SHA256 and MD5 hashes generated for integrity verification",
+      "entry_number": 2
+    },
+    {
+      "timestamp": "2026-01-13T14:54:10.872218",
+      "action": "Analysis Started",
+      "analyst_name": "Emrys",
+      "analyst_id": "CASE-20260113-145409",
+      "notes": "Loaded 8000 packets for analysis",
+      "entry_number": 3
+    }
+  ]
+}
