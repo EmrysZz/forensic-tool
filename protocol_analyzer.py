@@ -39,6 +39,7 @@ class ProtocolAnalyzer:
         print("[*] Starting protocol analysis...")
         
         results = {
+            'total_packets': len(self.packets),  # Add total packet count
             'protocol_distribution': self.analyze_protocols(),
             'ip_communications': self.analyze_ip_traffic(),
             'dns_activity': self.analyze_dns(),
@@ -154,7 +155,7 @@ class ProtocolAnalyzer:
                 
                 elif packet[DNS].qr == 1:  # Response
                     response_info = {
-                        'answers': packet[DNS].an.rdata if packet[DNS].an else None,
+                        'answers': str(packet[DNS].an.rdata) if packet[DNS].an and hasattr(packet[DNS].an, 'rdata') else None,
                         'count': packet[DNS].ancount
                     }
                     dns_responses.append(response_info)

@@ -11,6 +11,7 @@ import os
 import sys
 from datetime import datetime
 from network_analyzer import NetworkAnalyzer
+from dashboard import show_dashboard
 
 
 class SimpleNetworkAnalyzerGUI:
@@ -298,11 +299,8 @@ class SimpleNetworkAnalyzerGUI:
             self.root.after(0, lambda: self.progress_var.set(100))
             self.root.after(0, lambda: self.status_bar.config(
                 text="Complete!", bg='#28a745'))
-            self.root.after(0, lambda: messagebox.showinfo(
-                "Complete",
-                f"Analysis complete!\n\nCase ID: {self.analyzer.case_id}\n"
-                f"Reports: reports/{self.analyzer.case_id}/"
-            ))
+            # Launch dashboard instead of simple messagebox
+            self.root.after(0, lambda: show_dashboard(self.root, self.analyzer))
         except Exception as e:
             error_msg = str(e)  # Capture error message before lambda
             self.root.after(0, lambda: self.status_bar.config(

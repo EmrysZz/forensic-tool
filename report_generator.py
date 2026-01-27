@@ -465,10 +465,19 @@ class ReportGenerator:
         
         elements.append(Spacer(1, 0.5*inch))
         
+        # Create style for wrapping long text in table
+        wrap_style = ParagraphStyle(
+            'WrapStyle',
+            parent=styles['Normal'],
+            fontSize=12,
+            wordWrap='CJK',
+            leading=14
+        )
+        
         cover_data = [
             ['Case ID:', self.case_id],
             ['Analyst:', self.report_data.get('analyst', 'N/A')],
-            ['Evidence File:', self.report_data.get('evidence_file', 'N/A')],
+            ['Evidence File:', Paragraph(self.report_data.get('evidence_file', 'N/A'), wrap_style)],
             ['Report Generated:', self.report_data.get('generated_date', 'N/A')[:19]]
         ]
         
