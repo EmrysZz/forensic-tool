@@ -149,6 +149,23 @@ reports/CASE-ID/
 ├── top_ips.png                  # Top IP addresses
 └── top_ports.png                # Port usage
 ```
+## 🧪 Testing & Datasets
+
+We use specific real-world attack datasets to validate the tool's detection capabilities.
+
+- **Datasets Used**:
+  - `amp.TCP.reflection.SYNACK.pcap`: TCP Reflection/Amplification
+  - `amp.UDP.DNSANY.pcap`: DNS ANY Query Amplification
+  - `amp.dns.RRSIG.fragmented.pcap`: Fragmented DNS Traffic
+
+To run the validation tests:
+```bash
+# Run dataset validation tests
+python tests/test_specific_datasets.py
+```
+
+📖 **[View Full Testing Documentation](docs/datasets_and_testing.md)** - Details on datasets and expected results.
+
 ## 📚 Documentation
 
 Comprehensive documentation available in the `docs/` directory:
